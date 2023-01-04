@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		83AD922A807064A2DD292415 /* Pods_iOSArchitecturesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEA6AF9F424A0D5873D2723 /* Pods_iOSArchitecturesDemo.framework */; };
+		BB2E47132965794500BB219B /* AppUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E47122965794500BB219B /* AppUpdateView.swift */; };
+		BB2E471529657B9800BB219B /* UpdateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E471429657B9800BB219B /* UpdateCell.swift */; };
+		BB2E471729659C3F00BB219B /* AppUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E471629659C3F00BB219B /* AppUpdateViewController.swift */; };
+		BB2E471A2965E25900BB219B /* SearchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E47192965E25900BB219B /* SearchRouterInput.swift */; };
+		BB2E471D2965E42200BB219B /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E471C2965E42200BB219B /* SearchInteractorInput.swift */; };
 		DDA5B1A827C25B22003BD45B /* AppDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA5B1A727C25B22003BD45B /* AppDetailHeaderView.swift */; };
 		DDA5B1AA27C25CF5003BD45B /* AppDetailHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA5B1A927C25CF5003BD45B /* AppDetailHeaderViewController.swift */; };
 		DDA5B1AD27C3B25A003BD45B /* SearchPresenteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA5B1AC27C3B25A003BD45B /* SearchPresenteer.swift */; };
@@ -37,6 +42,11 @@
 		8BE349225151AE13B1EDE333 /* Pods-iOSArchitecturesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitecturesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSArchitecturesDemo/Pods-iOSArchitecturesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8EEA6AF9F424A0D5873D2723 /* Pods_iOSArchitecturesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSArchitecturesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A067E149D296BC0C249FD11F /* Pods-iOSArchitecturesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitecturesDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSArchitecturesDemo/Pods-iOSArchitecturesDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BB2E47122965794500BB219B /* AppUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateView.swift; sourceTree = "<group>"; };
+		BB2E471429657B9800BB219B /* UpdateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCell.swift; sourceTree = "<group>"; };
+		BB2E471629659C3F00BB219B /* AppUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateViewController.swift; sourceTree = "<group>"; };
+		BB2E47192965E25900BB219B /* SearchRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouterInput.swift; sourceTree = "<group>"; };
+		BB2E471C2965E42200BB219B /* SearchInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorInput.swift; sourceTree = "<group>"; };
 		DDA5B1A727C25B22003BD45B /* AppDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeaderView.swift; sourceTree = "<group>"; };
 		DDA5B1A927C25CF5003BD45B /* AppDetailHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeaderViewController.swift; sourceTree = "<group>"; };
 		DDA5B1AC27C3B25A003BD45B /* SearchPresenteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenteer.swift; sourceTree = "<group>"; };
@@ -83,6 +93,48 @@
 				A067E149D296BC0C249FD11F /* Pods-iOSArchitecturesDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB2E470F296578C800BB219B /* AppUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E47102965790400BB219B /* View */,
+				BB2E47112965790B00BB219B /* Controller */,
+			);
+			path = AppUpdate;
+			sourceTree = "<group>";
+		};
+		BB2E47102965790400BB219B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E47122965794500BB219B /* AppUpdateView.swift */,
+				BB2E471429657B9800BB219B /* UpdateCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB2E47112965790B00BB219B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E471629659C3F00BB219B /* AppUpdateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB2E47182965E23B00BB219B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E47192965E25900BB219B /* SearchRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BB2E471B2965E40700BB219B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E471C2965E42200BB219B /* SearchInteractorInput.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		DB95456C2F2DCD400ABCE8E9 /* Frameworks */ = {
@@ -143,6 +195,7 @@
 			children = (
 				E0E1D2A62034A36C0011E01A /* Search */,
 				E0E1D2A72034A3780011E01A /* AppDetail */,
+				BB2E470F296578C800BB219B /* AppUpdate */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -150,6 +203,8 @@
 		E0E1D2A62034A36C0011E01A /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				BB2E471B2965E40700BB219B /* Interactor */,
+				BB2E47182965E23B00BB219B /* Router */,
 				DDA5B1AE27C3B92B003BD45B /* Builder */,
 				DDA5B1AB27C3B23D003BD45B /* Presenter */,
 				F8A97B3622498F0C00FB2C0E /* View */,
@@ -427,12 +482,16 @@
 				E0E1D399203AE62E0011E01A /* ITunesApp.swift in Sources */,
 				F8A97B352249898E00FB2C0E /* AppCell.swift in Sources */,
 				F8114FC522A3E77500102830 /* AppDetailView.swift in Sources */,
+				BB2E471529657B9800BB219B /* UpdateCell.swift in Sources */,
 				E0E1D387203AE45F0011E01A /* WebRequest.swift in Sources */,
 				F8A1E03C2248382F00FE6448 /* Monads.swift in Sources */,
 				DDA5B1AA27C25CF5003BD45B /* AppDetailHeaderViewController.swift in Sources */,
 				E0E1D3D4203C4AA50011E01A /* UIColor+Extensions.swift in Sources */,
+				BB2E471A2965E25900BB219B /* SearchRouterInput.swift in Sources */,
 				DDA5B1A827C25B22003BD45B /* AppDetailHeaderView.swift in Sources */,
+				BB2E47132965794500BB219B /* AppUpdateView.swift in Sources */,
 				E0E1D3D1203C48D70011E01A /* AppDetailViewController.swift in Sources */,
+				BB2E471D2965E42200BB219B /* SearchInteractorInput.swift in Sources */,
 				E0E1D358203ADC590011E01A /* NetworkManager.swift in Sources */,
 				E0E1D39C203AE6420011E01A /* ITunesSong.swift in Sources */,
 				E0E1D2952034A3350011E01A /* SearchViewController.swift in Sources */,
@@ -440,6 +499,7 @@
 				E0E1D39F203AE7400011E01A /* ImageDownloader.swift in Sources */,
 				F8114FBE22A3DBF400102830 /* SearchView.swift in Sources */,
 				E0E1D395203AE5E20011E01A /* ITunesSearchResult.swift in Sources */,
+				BB2E471729659C3F00BB219B /* AppUpdateViewController.swift in Sources */,
 				E0E1D392203AE58B0011E01A /* ITunesSearchService.swift in Sources */,
 				E0E1D2932034A3350011E01A /* AppDelegate.swift in Sources */,
 				E0E1D384203AE3620011E01A /* AppStartManager.swift in Sources */,
