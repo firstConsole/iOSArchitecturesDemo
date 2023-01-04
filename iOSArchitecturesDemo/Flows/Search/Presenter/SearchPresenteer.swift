@@ -28,12 +28,20 @@ class SearchPresenter {
     
     // MARK: - Private Properties
     
-    private let searchService = ITunesSearchService()
+    private let interactor: SearchInteractorInput
+    private let router: SearchRouterInput
+    
+    // MARK: - Init
+    
+    init(interactor: SearchInteractorInput, router: SearchRouterInput) {
+        self.interactor = interactor
+        self.router = router
+    }
     
     // MARK: - Private Functions
     
     private func requestApps(with query: String) {
-        self.searchService.getApps(forQuery: query) { [weak self] result in
+        interactor.requestApps(with: query) { [weak self] result in
             guard let self = self else {
                 return
             }
@@ -53,8 +61,7 @@ class SearchPresenter {
     }
     
     private func openAppDetails(with app: ITunesApp) {
-        let appDetaillViewController = AppDetailViewController(app: app)
-        self.viewInput?.navigationController?.pushViewController(appDetaillViewController, animated: true)
+        router.openDetails(for: app)
     }
 }
 
